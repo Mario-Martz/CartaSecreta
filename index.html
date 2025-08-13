@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carta Secreta 💌</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>💌 Carta Secreta</h1>
+
+    <!-- Contenedor para el input y botón -->
+    <div id="password-container">
+        <p>Introduce la contraseña para abrir tu mensaje especial:</p>
+        <input type="password" id="password" placeholder="Contraseña secreta..." />
+        <button onclick="checkPassword()">Abrir carta</button>
+    </div>
+
+    <div id="message" class="hidden">
+        <h2>🌹 Para ti...</h2>
+
+        <img
+                src="https://i.pinimg.com/originals/48/d3/02/48d30255b5bada7277d55a72dbb74848.jpg"
+                alt="Pareja de sticks"
+                class="stick-image"
+        />
+
+        <p id="letter-text" class="hidden"></p>
+    </div>
+
+    <p id="error" class="error hidden">Contraseña incorrecta 💔</p>
+</div>
+
+<!-- Audio oculto -->
+<audio id="bg-music" src="musica.mp3" loop></audio>
+
+<script src="index.js"></script>
+</body>
+</html>
+
