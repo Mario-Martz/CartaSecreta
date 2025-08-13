@@ -39,7 +39,7 @@ function checkPassword() {
     const letterText = document.getElementById('letter-text');
     const passwordContainer = document.getElementById('password-container');
 
-    const correctPassword = "missecreto2025";
+    const correctPassword = "1601";
 
     if (password === correctPassword) {
         message.classList.remove('hidden');
